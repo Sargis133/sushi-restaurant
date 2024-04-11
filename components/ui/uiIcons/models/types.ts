@@ -1,0 +1,1 @@
+export type T_IconSize = 'sm' | 'md' | 'lg' | 'xl'
