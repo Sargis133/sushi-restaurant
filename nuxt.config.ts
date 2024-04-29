@@ -7,5 +7,9 @@ export default defineNuxtConfig({
       "Playfair Display": true,
       "Jost": true,
     }
-  }]]
+  }]],
+  app: {
+    baseURL: "/sushi-restaurant",
+    buildAssetsDir: "assets",
+  }
 })
