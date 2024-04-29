@@ -124,6 +124,7 @@
 
 <script setup lang="ts">
 import { jobTimes } from "~/components/templates/contact/config/jobTimes";
+import type {I_JobItems} from "~/models/pages/contact/interfaces";
 
 definePageMeta({
   pageTransition: {
@@ -132,8 +133,8 @@ definePageMeta({
   },
 });
 
-const wrapperTitle = ref(["CONTACT"]);
-const jobDates = ref(jobTimes);
+const wrapperTitle = ref<string[]>(["CONTACT"]);
+const jobDates = ref<I_JobItems[]>(jobTimes);
 </script>
 
 <style scoped lang="scss">

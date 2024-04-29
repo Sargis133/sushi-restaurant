@@ -206,7 +206,7 @@ const props = defineProps<{
   name: string;
   size?: T_IconSize;
 }>();
-const iconName = computed(() => props.name);
+const iconName = computed<string>(() => props.name);
 const iconSize = computed<T_IconSize>(() => props.size || "sm");
 </script>
 

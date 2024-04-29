@@ -9,9 +9,9 @@ const props = defineProps<{
   type?: string,
 }>()
 
-const inputVariant = computed(() => props.variant || 'default')
-const inputPlaceholder = computed(() => props.placeholder || '')
-const inputType = computed(() => props.type || 'text')
+const inputVariant = computed<string>(() => props.variant || 'default')
+const inputPlaceholder = computed<string>(() => props.placeholder || '')
+const inputType = computed<string>(() => props.type || 'text')
 </script>
 
 <style scoped lang="scss">

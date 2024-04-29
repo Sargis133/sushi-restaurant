@@ -9,7 +9,7 @@ const props = defineProps<{
   type: string,
   size?: string,
 }>()
-const btnType = computed(() => props.type)
+const btnType = computed<string>(() => props.type)
 </script>
 
 <style lang="scss" scoped>

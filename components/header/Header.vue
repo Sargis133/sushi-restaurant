@@ -50,15 +50,15 @@
 </template>
 
 <script setup lang="ts">
-let isShowMenu = ref(false);
+let isShowMenu = ref<boolean>(false);
 
-function onOpenMenuFunc() {
+function onOpenMenuFunc(): void {
   isShowMenu.value = true;
 }
-function onCloseMenuFunc() {
+function onCloseMenuFunc(): void {
   isShowMenu.value = false;
 }
-function onBookTableFunc() {
+function onBookTableFunc(): void {
   navigateTo('/book')
 }
 </script>

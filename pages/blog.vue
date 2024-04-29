@@ -39,6 +39,7 @@
 
 <script setup lang="ts">
 import { blogItems } from "~/components/templates/blog/config/blogItems";
+import type {I_BlogItems} from "~/models/pages/blog/interfaces";
 definePageMeta({
   pageTransition: {
     name: "slide-right",
@@ -46,9 +47,9 @@ definePageMeta({
   },
 });
 
-const wrapperTitle = ref(["BLOG"]);
+const wrapperTitle = ref<string[]>(["BLOG"]);
 
-const items = ref(blogItems);
+const items = ref<I_BlogItems[]>(blogItems);
 </script>
 
 <style scoped lang="scss">

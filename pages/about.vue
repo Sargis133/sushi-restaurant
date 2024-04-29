@@ -63,6 +63,8 @@
 </template>
 
 <script setup lang="ts">
+import type {I_AboutReviews} from "~/models/pages/about/interfaces";
+
 definePageMeta({
   pageTransition: {
     name: "slide-right",
@@ -70,9 +72,9 @@ definePageMeta({
   },
 });
 
-const wrapperTitle = ref(["ABOUT"]);
+const wrapperTitle = ref<string[]>(["ABOUT"]);
 
-const reviews = ref([
+const reviews = ref<I_AboutReviews[]>([
   { name: "Trip Advisor", text: "BEST STEAK HOUSE PRAGUE" },
   { name: "MICHELIN GUIDE", text: "BEST STEAK HOUSE PRAGUE" },
   { name: "STAR DINING", text: "BEST STEAK HOUSE PRAGUE" },

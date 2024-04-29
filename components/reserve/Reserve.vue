@@ -61,8 +61,8 @@
 </template>
 
 <script setup lang="ts">
-let inputDateVariant = ref("text");
-let inputTimeVariant = ref("text");
+let inputDateVariant = ref<string>("text");
+let inputTimeVariant = ref<string>("text");
 </script>
 
 <style scoped lang="scss">

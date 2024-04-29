@@ -1,4 +1,6 @@
-export const blogItems = [
+import type {I_BlogItems} from "~/models/pages/blog/interfaces";
+
+export const blogItems: I_BlogItems[] = [
     {
         image: 'blog-1.png',
         date: '24TH AUG 2023',

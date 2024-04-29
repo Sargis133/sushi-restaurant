@@ -37,7 +37,7 @@ const props = defineProps<{
 }>();
 
 const wrapperImage = computed<string>(() => props.bgImage);
-const wrapperTitle = computed(() => props.title);
+const wrapperTitle = computed<string[]>(() => props.title);
 
 let imgWrapper = ref<null | HTMLElement>(null);
 

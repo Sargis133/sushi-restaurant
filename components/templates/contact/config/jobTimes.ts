@@ -1,4 +1,6 @@
-export const jobTimes = [
+import type {I_JobItems} from "~/models/pages/contact/interfaces";
+
+export const jobTimes: I_JobItems[] = [
     {
         day: 'Monday',
         times: '16:00 - 22:30'

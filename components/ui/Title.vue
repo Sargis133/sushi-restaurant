@@ -34,11 +34,11 @@ const props = defineProps<{
   hideRightLine?: boolean;
   hideLeftLine?: boolean;
 }>();
-const titleText = computed(() => props.title);
-const fontSize = computed(() => props.size || "16px");
-const fontColor = computed(() => props.color || "$text-color");
-const rightLine = computed(() => props.hideRightLine);
-const leftLine = computed(() => props.hideLeftLine);
+const titleText = computed<string[]>(() => props.title);
+const fontSize = computed<string>(() => props.size || "16px");
+const fontColor = computed<string>(() => props.color || "$text-color");
+const rightLine = computed<boolean>(() => props.hideRightLine);
+const leftLine = computed<boolean>(() => props.hideLeftLine);
 </script>
 
 <style scoped lang="scss">
