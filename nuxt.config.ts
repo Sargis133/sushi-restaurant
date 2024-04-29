@@ -10,6 +10,6 @@ export default defineNuxtConfig({
   }]],
   app: {
     baseURL: "/sushi-restaurant",
-    buildAssetsDir: "assets",
+    buildAssetsDir: "assets"
   }
 })
