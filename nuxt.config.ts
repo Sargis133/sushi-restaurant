@@ -11,5 +11,12 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/sushi-restaurant",
     buildAssetsDir: "assets"
+  },
+  nitro: {
+    output: {
+      dir: '.output',
+      serverDir: '.output/server',
+      publicDir: '.output/public'
+    }
   }
 })
