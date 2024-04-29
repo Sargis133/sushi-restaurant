@@ -14,7 +14,7 @@
         <div class="blog-column__items-list">
           <div v-for="item in items" class="blog-column__item">
             <div class="item__image">
-              <img :src="item.image" alt="image" />
+              <img :src="'images/pages/' + item.image" alt="image" />
             </div>
             <div class="item-description">
               <div class="item__date">
