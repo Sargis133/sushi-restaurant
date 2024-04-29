@@ -8,7 +8,7 @@ export const allCategories: I_Categories[] = [
                 name: 'SPICY TUNA MAKI',
                 description: 'A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori and seasoned rice.',
                 price: '$5',
-                image: '/images/products/pexels-yang-hao-10692509 1.png',
+                image: 'images/products/pexels-yang-hao-10692509 1.png',
                 list: true
             },
             {
@@ -27,7 +27,7 @@ export const allCategories: I_Categories[] = [
                 name: 'TUNA MAKI',
                 description: 'A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a nori-wrapped rice roll.',
                 price: '$5',
-                image: 'images/products/pexels-yang-hao-10692500 1.png'
+                image: '~/images/products/pexels-yang-hao-10692500 1.png'
             }
         ]
     },
