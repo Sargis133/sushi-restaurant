@@ -15,19 +15,19 @@ export const allCategories: I_Categories[] = [
                 name: 'MANGO MAKI',
                 description: 'Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado, delivering a satisfying contrast of textures.',
                 price: '$5',
-                image: '../images/products/pexels-yang-hao-10692510 1.png'
+                image: 'images/products/pexels-yang-hao-10692510 1.png'
             },
             {
                 name: 'SALMON MAKI',
                 description: 'Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned rice, coated with nutty sesame seeds.',
                 price: '$5',
-                image: '@/images/products/pexels-yang-hao-10692517 1.png'
+                image: 'images/products/pexels-yang-hao-10692517 1.png'
             },
             {
                 name: 'TUNA MAKI',
                 description: 'A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased in a nori-wrapped rice roll.',
                 price: '$5',
-                image: '~/images/products/pexels-yang-hao-10692500 1.png'
+                image: 'images/products/pexels-yang-hao-10692500 1.png'
             }
         ]
     },

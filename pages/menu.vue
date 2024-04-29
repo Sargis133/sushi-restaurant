@@ -27,7 +27,7 @@
             <div class="product-items__product-list">
               <div v-for="item in product.products" class="product-list__item">
                 <div class="item-image">
-                  <img :src="item.image" alt="product" />
+                  <NuxtImg :src="item.image" alt="product" />
                 </div>
                 <div class="item-text">
                   <div class="item-text__title">
