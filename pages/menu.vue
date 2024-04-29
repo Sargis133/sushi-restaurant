@@ -27,7 +27,7 @@
             <div class="product-items__product-list">
               <div v-for="item in product.products" class="product-list__item">
                 <div class="item-image">
-                  <img :src="'/assets/images/' + item.image" alt="product" />
+                  <img :src="'~/assets/images/' + item.image" alt="product" />
                 </div>
                 <div class="item-text">
                   <div class="item-text__title">
