@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <div class="page-content__wrapper">
-      <image-wrapper bg-image="/images/pages/about.png" :title="wrapperTitle" />
+      <image-wrapper bg-image="images/pages/about.png" :title="wrapperTitle" />
     </div>
     <div class="page-content__about-content">
       <div class="about-content__top-section">

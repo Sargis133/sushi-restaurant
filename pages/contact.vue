@@ -2,7 +2,7 @@
   <div class="page-content">
     <div class="page-content__wrapper">
       <image-wrapper
-        bg-image="/images/pages/contact-main.png"
+        bg-image="images/pages/contact-main.png"
         :title="wrapperTitle"
       />
     </div>
