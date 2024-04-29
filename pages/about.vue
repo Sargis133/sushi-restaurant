@@ -42,7 +42,7 @@
 
       <div class="about-content__last-section">
         <div class="last-section__image">
-          <img src="/images/pages/about-2.png" alt="about-2" />
+          <img src="images/pages/about-2.png" alt="about-2" />
         </div>
         <div class="last-section__description">
           <div class="description__title">
