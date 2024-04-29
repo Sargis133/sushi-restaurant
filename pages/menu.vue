@@ -2,7 +2,7 @@
   <div class="page-content">
     <div class="page-content__wrapper">
       <image-wrapper
-        bg-image="images/pages/menu-wrapper.png"
+        bg-image="/images/pages/menu-wrapper.png"
         :title="wrapperTitle"
       />
     </div>
@@ -27,14 +27,14 @@
             <div class="product-items__product-list">
               <div v-for="item in product.products" class="product-list__item">
                 <div class="item-image">
-                  <img :src="'images/products/' + item.image" alt="product" />
+                  <img :src="'/images/products/' + item.image" alt="product" />
                 </div>
                 <div class="item-text">
                   <div class="item-text__title">
                     <h4 class="title">
                       {{ item.name }}
                       <span v-if="item.list">
-                        <img src="images/icons/list.png" alt="list" />
+                        <img src="/images/icons/list.png" alt="list" />
                       </span>
                     </h4>
                     <p class="line"></p>
