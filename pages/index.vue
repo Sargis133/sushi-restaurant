@@ -37,9 +37,9 @@ definePageMeta({
 const wrapperTitle = ref<string[]>(["SUSHI", "SENSATION"]);
 
 const navItems = ref<I_NavigationItems[]>([
-  { image: "/images/pages/menu.png", text: "MENU", url: '/menu' },
-  { image: "/images/pages/reservation.png", text: "RESERVATION", url: '/book' },
-  { image: "/images/pages/ourrestaurant.png", text: "OUR RESTAURANT",url: '/ourrestaurant' },
+  { image: "images/pages/menu.png", text: "MENU", url: '/menu' },
+  { image: "images/pages/reservation.png", text: "RESERVATION", url: '/book' },
+  { image: "images/pages/ourrestaurant.png", text: "OUR RESTAURANT",url: '/ourrestaurant' },
 ]);
 
 function onNavigateToPage(url: string): void {
