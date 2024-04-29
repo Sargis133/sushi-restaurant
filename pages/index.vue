@@ -12,12 +12,12 @@
           <img :src="item.image" alt="nav-image" />
         </div>
         <div class="item-link">
-          <img src="/images/icons/RoundedEdgeTopRight.png" alt="rd" class="rounded-edge-right"/>
+          <img src="images/icons/RoundedEdgeTopRight.png" alt="rd" class="rounded-edge-right"/>
           <p>{{ item.text }}</p>
           <ui-ui-button type="outline" class="item-link__btn" @click="onNavigateToPage(item.url)">
             <ui-ui-icons name="arrow-right" size="sm"/>
           </ui-ui-button>
-          <img src="/images/icons/RoundedEdgeTopLeft.png" alt="rd" class="rounded-edge-left"/>
+          <img src="images/icons/RoundedEdgeTopLeft.png" alt="rd" class="rounded-edge-left"/>
         </div>
       </div>
     </div>

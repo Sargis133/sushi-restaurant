@@ -27,7 +27,7 @@
                 <ui-ui-icons name="instagram" size="sm" />
               </NuxtLink>
             </div>
-            <img src="/images/pages/contact-1.png" alt="img" />
+            <img src="images/pages/contact-1.png" alt="img" />
           </div>
           <div class="image-section__image-box">
             <div class="image-box__hover">
@@ -35,7 +35,7 @@
                 <ui-ui-icons name="instagram" size="sm" />
               </NuxtLink>
             </div>
-            <img src="/images/pages/contact-2.png" alt="img" />
+            <img src="images/pages/contact-2.png" alt="img" />
           </div>
           <div class="image-section__image-box">
             <div class="image-box__hover">
@@ -43,7 +43,7 @@
                 <ui-ui-icons name="instagram" size="sm" />
               </NuxtLink>
             </div>
-            <img src="/images/pages/contact-3.png" alt="img" />
+            <img src="images/pages/contact-3.png" alt="img" />
           </div>
           <div class="image-section__image-box">
             <div class="image-box__hover">
@@ -51,20 +51,20 @@
                 <ui-ui-icons name="instagram" size="sm" />
               </NuxtLink>
             </div>
-            <img src="/images/pages/contact-4.png" alt="img" />
+            <img src="images/pages/contact-4.png" alt="img" />
           </div>
         </div>
 
         <div class="bottom-section__map-image">
           <img
             class="map-image__image"
-            src="/images/pages/contact-map.png"
+            src="images/pages/contact-map.png"
             alt="img"
           />
           <div class="map-image__button">
             <img
               class="button__top-round"
-              src="/images/icons/RoundedEdgeTopLeft.png"
+              src="images/icons/RoundedEdgeTopLeft.png"
               alt="button__top-round"
             />
             <span>SHOW ROUTE</span>
@@ -73,7 +73,7 @@
             /></ui-ui-button>
             <img
               class="button__bottom-round"
-              src="/images/icons/RoundedEdgeTopLeft.png"
+              src="images/icons/RoundedEdgeTopLeft.png"
               alt="button__bottom-round"
             />
           </div>

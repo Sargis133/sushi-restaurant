@@ -34,7 +34,7 @@
                     <h4 class="title">
                       {{ item.name }}
                       <span v-if="item.list">
-                        <img src="/images/icons/list.png" alt="list" />
+                        <img src="images/icons/list.png" alt="list" />
                       </span>
                     </h4>
                     <p class="line"></p>
