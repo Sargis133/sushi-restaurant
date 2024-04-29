@@ -68,6 +68,7 @@ definePageMeta({
 
 const wrapperTitle = ref<string[]>(["MENU"]);
 const products = ref<I_Categories[]>(allCategories);
+
 </script>
 
 <style scoped lang="scss">
