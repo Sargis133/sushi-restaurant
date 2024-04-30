@@ -66,12 +66,14 @@ function onNavigateToPage(url: string): void {
     flex-direction: column;
     grid-row-gap: 10px;
     overflow: hidden;
+    scrollbar-width: none;
     &:hover {
       overflow-y: auto;
     }
     &::-webkit-scrollbar {
       width: 0;
     }
+
 
     .nav-content__item {
       position: relative;

@@ -97,6 +97,7 @@ const products = computed<I_Categories[]>(() => allCategories);
     border-radius: 10px;
     height: 100vh;
     overflow: auto;
+    scrollbar-width: none;
     &::-webkit-scrollbar {
       width: 0;
     }

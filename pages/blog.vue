@@ -79,6 +79,7 @@ const items = ref<I_BlogItems[]>(blogItems);
       border-radius: 10px;
       padding: 10px;
       overflow: auto;
+      scrollbar-width: none;
       &::-webkit-scrollbar {
         width: 0  ;
       }

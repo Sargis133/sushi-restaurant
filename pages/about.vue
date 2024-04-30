@@ -99,6 +99,11 @@ const reviews = ref<I_AboutReviews[]>([
     flex-direction: column;
     grid-row-gap: 10px;
     padding: 10px;
+    max-height: 100vh;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
 
 
     .about-content__top-section {

@@ -164,6 +164,7 @@ const jobDates = ref<I_JobItems[]>(jobTimes);
     padding: 10px;
     overflow: auto;
     max-height: 100vh;
+    scrollbar-width: none;
     &::-webkit-scrollbar {
       width: 0;
     }
