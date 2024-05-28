@@ -196,6 +196,80 @@
       </g>
     </svg>
   </template>
+
+  <template v-else-if="iconName === 'date'">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      :class="iconSize"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7"
+          stroke="#ededed"
+          stroke-width="2"
+          stroke-linecap="round"
+        ></path>
+        <rect x="6" y="12" width="3" height="3" rx="0.5" fill="#ededed"></rect>
+        <rect
+          x="10.5"
+          y="12"
+          width="3"
+          height="3"
+          rx="0.5"
+          fill="#ededed"
+        ></rect>
+        <rect x="15" y="12" width="3" height="3" rx="0.5" fill="#ededed"></rect>
+      </g>
+    </svg>
+  </template>
+
+  <template v-else-if="iconName === 'time'">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      :class="iconSize"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+          stroke="#ededed"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M12 6V12"
+          stroke="#ededed"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="M16.24 16.24L12 12"
+          stroke="#ededed"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </svg>
+  </template>
+
   <template v-else><span></span></template>
 </template>
 
@@ -208,6 +282,8 @@ const props = defineProps<{
 }>();
 const iconName = computed<string>(() => props.name);
 const iconSize = computed<T_IconSize>(() => props.size || "sm");
+
+
 </script>
 
 <style scoped>
