@@ -1,18 +1,21 @@
 <template>
   <div class="input-box">
-    <input
-      v-model="inputValue"
-      :type="inputType"
-      :class="inputVariant + ' ' + inputSize"
-      :placeholder="inputPlaceholder"
-      :min="minValue"
-      @focus="onFocusInputFunc"
-      @blur="onBlurInputFunc"
-      @input="onInputValueFunc"
-    />
-    <div class="input-box__icon">
-      <slot />
+    <div class="input-box__input">
+      <input
+          v-model="inputValue"
+          :type="inputType"
+          :class="inputVariant + ' ' + inputSize"
+          :placeholder="inputPlaceholder"
+          :min="minValue"
+          @focus="onFocusInputFunc"
+          @blur="onBlurInputFunc"
+          @input="onInputValueFunc"
+      />
+      <div class="input-box__icon">
+        <slot />
+      </div>
     </div>
+    <span v-if="errorText" class="input-box__error-text">{{ errorText }}</span>
   </div>
 </template>
 
@@ -24,6 +27,7 @@ const props = defineProps<{
   placeholder?: string;
   type?: string;
   minValue?: string;
+  error?: string;
 }>();
 
 const emits = defineEmits<{
@@ -47,6 +51,7 @@ const inputSize = computed(() => props.size || 'md');
 const inputPlaceholder = computed<string>(() => props.placeholder || "");
 const inputType = computed<string>(() => props.type || "text");
 const minValue = computed(() => props.minValue || "");
+const errorText = computed(() => props.error || '');
 
 function onFocusInputFunc() {
   emits('on-focus')
@@ -63,7 +68,10 @@ function onInputValueFunc(value: any) {
 
 .input-box {
   width: 100%;
+}
+.input-box__input {
   position: relative;
+  width: 100%;
 }
 .input-box__icon {
   width: max-content;
@@ -74,6 +82,10 @@ function onInputValueFunc(value: any) {
   top: 0;
   bottom: 0;
   z-index: 10;
+}
+.input-box__error-text {
+  color: #E80000;
+  font-family: "Jost",sans-serif;
 }
 
 .sm {
