@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-
+fetch('https://ipapi.co/json/').then(res => res.json()).then(r => console.log(r.ip))
 </script>
 
 <style scoped>
